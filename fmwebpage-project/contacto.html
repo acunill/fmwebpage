@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head><meta charset="utf-8">
+      <title>Mapas de humedad de los combustibles finos muertos</title>
+      <meta name="description" content="Mapas de humedad del combustible fino muerto para la predicción del riesgo de incendio forestal"/>
+      <meta name="author" content="Àngel Cunill Camprubí"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!--STYLE SHEETS-->
+      <link href="https://fonts.googleapis.com/css?family=Roboto:400,500|Montserrat:300,400,400i,600" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="styles/reset.css" />
+      <link rel="stylesheet" type="text/css" href="styles/style.css"/>
+      <!--FAVICON-->
+      <link rel="shortcut icon" href="favicon-fmd-32px-16px.ico" type="image/x-icon"/>
+   </head>
+     
+   <body>
+      <!--HEADER-->
+      <header id="masthead" role="heading">
+         <!--Top header-->
+         <div id="masthead-top" class="bg--pur">
+            <div class="cnt mg-0 top-cnt">
+               <!--Logo-->
+               <a href="http://www.etsea.udl.es">
+                  <img src="images/logo-udl-etsea-w.svg" height="55px" width="220px" alt="UdL" title="ETSEA-Universitat de Lleida"/>
+               </a>
+               <!--Social media and languages-->
+               <div class="socialmedia-cnt" id="socialmedia-lang">
+                  <a href="https://www.facebook.com/ETSEA.UdL">
+                     <img src="images/icon-facebook.svg" alt="Facebook" title="Facebook"/>
+                  </a>
+                  <a href="https://twitter.com/ETSEA_UdL">
+                     <img src="images/icon-twitter.svg" alt="Twitter" title="Twitter"/>
+                  </a>
+                  <a href="https://github.com">
+                     <img src="images/icon-github.svg" alt="GitHub" title="GitHub"/>
+                  </a>
+                  <a class="lang-i" href="index.html" title="Español">ES</a>
+                  <a class="lang-i" href="downloads.html" title="English">EN</a>
+               </div>
+            </div>
+         </div>
+         <!--Webpage title-->
+         <div id="masthead-siteid">
+            <div class="sideid-cnt cnt mg-1">
+               <div class="sideid-tx">
+                  <h1 class="title">Contenido de Humedad de los Combustibles Finos Muertos</h1>
+                  <p class="title title--sm">Enfoque a la predicción del riesgo de incendios forestales</p>
+               </div>
+            </div>
+         </div>
+      </header>
+      <!--FINISH HEADER-->
+        
+      <!--PRIMARY NAVIGATION BAR-->
+      <nav id="primarynav" role="navigation">
+         <ul class="primarynav cnt mg-1">
+            <li class="primarynav-i"><a href="index.html">INICIO</a></li>
+            <li class="primarynav-i"><a href="mapas.html">MAPAS</a>
+               <!--Maps submenu-->
+               <ul class="dropdown bg--grey">
+                  <li><a href="mapas.html">ACTUAL</a></li>
+                  <li><a href="ultimos5dias.html">ÚLTIMOS DÍAS</a></li>
+                  <li><a href="downloads.html">DESCARGAS</a></li>
+               </ul>
+            </li>
+            <li class="primarynav-i"><a href="referencias.html">REFERENCIAS</a></li>
+            <li class="primarynav-i isnav-active"><a href="contacto.html">CONTACTO</a></li>
+         </ul>
+      </nav>
+      <!--FINISH PRIMARY NAVIGATION BAR-->
+        
+      <!--MAIN CONTENTS-->
+      <main role="main" id="main-section">
+                  
+         <section class="form-w wrapper cnt mg-2 bg--w brd--gr" id="contact-section">
+            <h2 class="line-sep">Contacto</h2>
+            
+            <div class="mg-2" id="contact">
+               <!--Contact info-->
+               <section class="" id="contact-info">
+                  <div class="cinfo-logo">
+                     <img src="images/icon-udl.svg" alt="UdL" width="64px" height="64px"/>
+                     <p class="tx f--sm"><b>Universitat de Lleida</b><br>Escola Tècnica Superior d'Enginyeria Agrària</p>
+                  </div>
+                  <div class="cinfo-i mg-2">
+                     <img src="images/icon-location.svg" alt="UdL" width="18px" height="18px"/>
+                     <p class="tx f--sm">Campus ETSEA<br>
+                     Av. Rovira Roure, núm. 191<br>25198 LLEIDA</p>
+                  </div>
+                  <div class="cinfo-i mg-2">
+                     <img src="images/icon-email.svg" alt="UdL" width="18px" height="18px"/>
+                     <address class="tx f--sm">
+                        <a href="mailto:angel.cunill@udl.cat">angel.cunill@udl.cat</a>
+                     </address>
+                  </div>
+               </section>
+               <!--Contact form-->
+               <form action="sendmail.php" method="post" class="cform-w mg-3" id="contact-form">
+                  <label class="tx" for="name">Nombre *</label>
+                  <input class="tx f--sm" type="text" id="name" name="name" required>
+
+                  <label class="tx" for="email">Dirección de correo electrónico *</label>
+                  <input class="tx f--sm" type="text" id="email" name="email" required>
+
+                  <label class="tx" for="message">Mensaje *</label>
+                  <textarea class="tx f--sm" name="message" id="message" name="message" required></textarea>
+                  <span class="tx f--x-sm">* Campos obligatorios.</span>
+                  
+                  <input class="btn" type="submit" id="btnSend" value="Enviar mensaje">
+               </form>
+            </div>
+            
+         </section>
+      
+      </main>
+      <!--FINISH MAIN CONTENT-->
+
+      <!--FOOTER-->
+      <footer id="mastfooter">
+         <div class="mastfooter-cnt cnt mg-0">
+            <p><a href="http://www.udl.es/">Universitat de Lleida</a> &copy; 2017 | Escola Tècnica Superior d'Enginyeria Agrària</p>
+         </div>
+      </footer>
+      <!--FINISH FOOTER-->
+      
+      <!--MODAL MESSAGE-->
+      <div class="modal-w" name="modalMsg">
+         <div class="modal-msg">
+            <img class="btn-close" id="btnClose" src="images/icon-close.svg" alt="close" title="Close" width="20px" height="20px"/>
+            <h3 class="line-sep">El mensaje ha sido enviado satisfactoriamente!</h3>
+            <p class="tx">En breve recibirá respuesta a su petición.</p>
+         </div>
+      </div>
+            
+      <!--SCRIPTS
+      <script type="text/javascript" src="scripts/jquery-3.3.1.js"></script>
+      <script type="text/javascript" src="scripts/form.js"></script>-->
+        
+    </body>
+</html>
+

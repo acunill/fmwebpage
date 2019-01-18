@@ -1,0 +1,249 @@
+/** fm-style.css v1.0 | Angel Cunill Camprubi <acunill86@gmail.com> **/ 
+
+html {
+    font-size: 10px;
+}
+body {
+    font-family:  "Roboto", sans-serif;
+    font-weight: 400;
+    background-color: #f6f6f6;
+}
+
+/*HEADER*/
+#web-header {
+    display: flex;
+    justify-content: center;
+    background-color: #731249;
+    padding: 10px;
+}
+
+/*logos and languages*/
+#header-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    width: 1050px;
+    margin: 0p;
+    padding: 0px 20px;
+}
+.logo-link {
+    margin: 0px 5px;
+}
+.lang-link {
+    font-weight: 500;
+    font-size: 1.3rem;
+    color: #fff;
+    margin: 0px 0px 0px 5px;
+}
+
+/*image and web-title*/
+#web-maintitle {
+    margin: 0;
+    padding: 5px 0px;
+}
+#maintitle-box {
+    width: 1050px;
+    height: 235px;
+    position: relative;
+    margin: 0px auto;
+    box-shadow: 2px 0px 7px 0px #676767;
+    z-index: 1;
+}
+#maintitle-text {
+    position: absolute;
+    top: 35%;
+    padding: 15px 20px 15px 20px;
+    background-color: rgb(255, 255, 255, 0.8);
+    color: #515151;
+}
+#maintitle-text h1 {
+    font-size: 2.7rem;
+    font-weight: 500;
+}
+#maintitle-text h2 {
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+/*FINISH HEADER*/
+
+
+/*NAVBAR*/
+nav {
+    display: block;
+    width: 100%;
+    background-color: #f6f6f6;
+    padding: 0;
+}
+nav ul {
+    list-style: none;
+}
+/*navbar position and style*/
+#navbar {
+    display: flex;
+    width: 1050px;
+    margin: 0px auto;
+    padding: 0;
+    border-top: 1px solid #c1c1c1;
+    border-bottom: 1px solid #c1c1c1;
+    box-sizing: border-box;
+    height: 38px;
+}
+#navbar li {
+    display: block;
+    color: #676767;
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 0px 20px;
+    box-sizing: border-box;
+    height: 37px;
+    position: relative;
+    line-height: 36px;
+}
+
+/*navbar style when mouse is over the button*/
+#navbar>li:hover, .active {
+    background-color: #eaeaea;
+    border-bottom: 4px solid #731249;
+    color: #731249 !important;
+}
+
+/*dropdown menu style*/
+#navbar li ul {
+    display: block;
+    background-color: #f6f6f6;
+    box-shadow: 1px 1px 6px #c1c1c1;
+    position: absolute;
+    left: 0; 
+    width: 130px;
+    margin-top: 2px;
+    opacity: 0;
+    visibility: hidden;
+    transition-duration: 0.3s;
+}
+#navbar li ul li {
+    border-bottom: 1px solid #c1c1c1;
+}
+
+/*show the dropdown menu on hover*/
+#navbar li:hover > ul {
+    opacity: 1;
+    visibility: visible;
+}
+
+/*selected link style*/
+#navbar li ul li:hover {
+    background-color: #eaeaea;
+    color: #731249 !important;
+    border-bottom: 1px solid #731249;
+}
+/*FINISH NAVBAR*/
+
+
+/*CONTENTS*/
+main {
+    display: block;
+    background-color: #fff;
+    width: 1050px;
+    box-sizing: border-box;
+    margin: 3px auto 3px auto;
+    padding: 20px;
+    border-top: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+}
+main h1 {
+    font-weight: 400;
+    font-size: 1.8rem;
+    color: #2D2D2D;
+    margin-bottom: 20px;
+}
+article p {
+    font-family:  "Montserrat", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #676767;
+    text-align: left;
+    margin-bottom: 10px;
+}
+.item {
+    display: flex;
+    margin: 20px
+}
+.wrap-text {
+    margin-right: 20px;
+}
+
+#thresholds-image-box {
+    margin: 0px 20px;
+    text-align: center;
+    width: 40%;
+}
+main figcaption {
+    text-align: left;
+    margin-top: 10px;
+    line-height: 1.4;
+    font-family:  "Montserrat", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: #888888;
+}
+/*FINISH CONTENTS*/
+
+/*LINKS*/
+#web-friendly {
+    display: block;
+    background-color: #fff;
+    width: 1050px;
+    box-sizing: border-box;
+    margin: 3px auto 5px auto;
+    padding: 20px 20px;
+    border-top: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+}
+#links-title {
+    display: flex;
+    align-items: center
+}
+.links {
+    margin: 0px 10px; 
+}
+#links-title h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #2D2D2D;
+    margin: 0;
+}
+#web-friendly-links {
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+}
+.logo-web-friendly {
+    margin: 15px 30px 0px 30px;
+}
+/*FINISH LINKS*/
+
+/*FOOTER*/
+footer {
+    display: block;
+    background-color: #242424;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 0.9rem;
+}
+.footer-content {
+    display: block;
+    box-sizing: border-box;
+    margin: 0px auto;
+    padding: 20px 0px 40px 20px;
+    width: 960px;
+}
+#footer-uni {
+    font-size: 1.1rem;
+    margin: 2px 0px;
+}
+/*FINISH FOOTER*/
